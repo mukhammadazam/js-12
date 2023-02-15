@@ -1,26 +1,24 @@
 //-------------------1-masala----------------
-// let myErray = [];
-// let myNew = [];
-// for (let i = 1; i < 6; i++) {
-//     myErray = +prompt();
-//     if (isNaN(myErray) || myErray == "") {
-//         alert("son kiriting")
-//     } else {
-//         myNew.push(myErray)
-//     }
+let myErray = [];
+let myNew = [];
+for (let i = 1; i < 6; i++) {
+    myErray = +prompt();
+    if (isNaN(myErray) && myErray == "") {
+        alert("son kiriting")
+    } else {
+        myNew.push(myErray)
+    }
+}
+const calcitp = function (sonlar) {
+    let sums = 0;
+    for (const iterator of sonlar) {
+        sums = sums + iterator;
+    }
+    return sums;
+}
+console.log(calcitp(myNew));
 
-
-// }
-// const calcitp = function (sonlar) {
-//     let sums = 0;
-//     for (const iterator of sonlar) {
-//         sums = sums + iterator;
-//     }
-//     return sums;
-// }
-// console.log(calcitp(myNew));
-
-// console.log(myNew);
+console.log(myNew);
 
 
 
